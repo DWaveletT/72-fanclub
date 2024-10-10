@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+
+    <style>
+      .particles-js-canvas-el {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <script src="particles.min.js"></script>
+
+    <script>
+      setTimeout(() => particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      }), 100
+    );
+    </script>
+  </body>
+</html>
